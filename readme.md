@@ -11,7 +11,7 @@ A browser extension that prevents the flash of light content (FOLC) when using d
  - Compatible with the browser’s prefers-color-scheme setting.
  - Lightweight and simple to use.
 
-Installation
+## Installation
 
 ### Temporary Installation (Development Mode)
 
@@ -53,8 +53,10 @@ Coming soon! This extension will be available on the Mozilla Add-ons store for e
 
 1.	Clone the repository:
 
+```bash
 git clone https://github.com/nicolasdanelon/avoid-fouc-when-dark-theme
 cd avoid-fouc-when-dark-theme
+```
 
 2.	Make changes to the files.
 3.	Test the extension by loading it as a temporary add-on in Firefox (about:debugging).
