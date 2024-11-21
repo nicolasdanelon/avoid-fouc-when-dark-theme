@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Dark Theme Prevent Flash",
+  "version": "1.0",
+  "description": "Prevent flash of light content when using dark theme.",
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["dark-theme.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "nicolasdanelon@gmail.com",
+      "strict_min_version": "109.0"
+    }
+  }
+}

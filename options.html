@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Dark Theme Extension - Settings (alpha)</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #121212;
+                color: #ffffff;
+                padding: 20px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            input[type="color"] {
+                margin-left: 10px;
+            }
+
+            button {
+                margin-top: 20px;
+                padding: 10px 20px;
+                background-color: #1f1f1f;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #333333;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Dark Theme Settings (alpha)</h1>
+        <form id="settings-form">
+            <label>
+                Background Color:
+                <input type="color" id="bg-color" value="#121212" />
+            </label>
+            <label>
+                Text Color:
+                <input type="color" id="text-color" value="#ffffff" />
+            </label>
+            <label>
+                <input type="checkbox" id="hide-images" checked />
+                Hide images while loading
+            </label>
+            <button type="button" id="save-button">Save Settings</button>
+        </form>
+        <p id="status-message"></p>
+        <script src="options.js"></script>
+    </body>
+</html>
